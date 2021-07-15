@@ -91,3 +91,51 @@ log.json({
 | cyan   | 
 | white   | 
 | crimson   | 
+
+#### 1.3 global mode
+
+to configure the global mod just call ```log.config()``` in App.js and then you will have access to any log via the ```console.```
+
+```js
+import log from 'rnlog'
+
+...
+
+log.config()
+```
+
+so
+
+```js
+// import log from 'rnlog' - you don't need it anymore
+
+...
+
+console.info('test log info')
+
+console.success('test log success')
+
+console.warning('test log warning')
+
+console.error('test log error')
+
+console.json({
+  name: "ayrton",
+  lastname: "lacerda"
+})
+```
+
+### ⚠️ warning
+
+I believe the best setting to avoid problems in production is
+
+```js
+import log from 'rnlog'
+
+...
+if (__DEV__) {
+  log.config()
+}
+```
+
+but if it's to debug in release it won't work, just don't forget to put it again
