@@ -1,11 +1,15 @@
 {
-  "name": "@wolfdev/rnlog",
-  "version": "1.0.1",
+  "name": "rnlog",
+  "version": "1.0.4",
   "description": "pretty logs in terminal for react native without debug mode",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": "https://github.com/ayrtonlacerda/-wolfdev-rnlog",
   "author": "ayrton",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^16.3.2"
+  }
 }
