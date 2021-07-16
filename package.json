@@ -1,6 +1,6 @@
 {
   "name": "rnlog",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "pretty logs in terminal for react native without debug mode",
   "main": "index.ts",
   "scripts": {
